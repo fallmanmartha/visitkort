@@ -1,0 +1,37 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Section2 from "../components/section2.astro";
+import Heading from "../components/Heading.astro";
+import Text from "../components/text.astro";
+import "../styles/tailwind.css";
+---
+
+<MainLayout title="Visitkort - Märtha Fallman">
+  <div class="mt-6">
+    <a href="/"><Button variant="primary" size="small">Hjem</Button></a>
+  </div>
+
+  <section class="text-primary-red">
+    <div class="bg-primary-yellow py-16 pl-16 mt-10 md:grid grid-cols-2 gap-20 max-w-250 shadow-md mr-10 pr-10">
+      <div>
+        <Heading htmlheading="h2" size="medium" font="display">Märtha Fallman</Heading>
+
+        <Text teksttype="brødtekst">
+          Jag studerar grafisk design och UX och har under min ett och ett halvt år långa utbildning vid EK fått arbeta praktiskt med projekt där estetik och funktion går hand i hand. Nu söker jag praktik för att få möjlighet att utveckla mina
+          kunskaper ytterligare och få en inblick i hur det är att arbeta i branschen på riktigt.</Text
+        >
+        <div class="mb-10">
+          <a href="#tab-kompetencer"><Button variant="secondary" size="medium">Se kompetencer</Button></a>
+        </div>
+      </div>
+      <div>
+        <img src="/src/assets/images/me.png" alt="pictureofme" class="w-[80%]" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <Section2 />
+  </section>
+</MainLayout>
