@@ -1,9 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
-import Section2 from "../components/section2.astro";
 import Heading from "../components/Heading.astro";
-import Text from "../components/text.astro";
+import Kompetencer from "../components/Kompetencer.astro";
+import Text from "../components/Text.astro";
 import "../styles/tailwind.css";
 ---
 
@@ -12,7 +12,7 @@ import "../styles/tailwind.css";
     <a href="/"><Button variant="primary" size="small">Hjem</Button></a>
   </div>
 
-  <section class="text-primary-red">
+  <section class="text-primary-red animate-fade-right animate-duration-[1000ms]">
     <div class="bg-primary-yellow py-16 pl-16 mt-10 md:grid grid-cols-2 gap-20 max-w-250 shadow-md mr-10 pr-10">
       <div>
         <Heading htmlheading="h2" size="medium" font="display">Märtha Fallman</Heading>
@@ -31,7 +31,5 @@ import "../styles/tailwind.css";
     </div>
   </section>
 
-  <section>
-    <Section2 />
-  </section>
+  <section><Kompetencer /></section>
 </MainLayout>
